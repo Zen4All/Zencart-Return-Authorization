@@ -1,13 +1,13 @@
 <?php
 /**
  * Flexible Returns Authorization (RMA) Install
- * For Zen-Cart 1.5.1
- * Last Updated: 5/11/2013
+ * For Zen-Cart 1.5.6
+ * Last Updated: 08/12/2019
  *
  * @copyright Copyright 2003-2005 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
- * @version $Id: init_ra_config.php 3.1 7/15/2012 C Jones $
+ * @version $Id: init_ra_config.php 3.2 08/12/2019 T McCaffery $
  */
  
     $ra_menu_title = 'Return Authorization';
@@ -105,7 +105,7 @@
     $db->Execute($sql);
     $sql = "INSERT INTO ".DB_PREFIX."configuration (configuration_id, configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, last_modified, date_added, use_function, set_function) VALUES (NULL, '<strong>Email</strong> RMA Grace Period', 'RMA_GRACE_PERIOD', '15', 'This tells your customer how many days till the RMA# expires.', '".$ra_configuration_id."', 29, NULL, NOW(), NULL, 'zen_cfg_textarea(')";
     $db->Execute($sql);
-    $sql = "INSERT INTO ".DB_PREFIX."configuration (configuration_id, configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, last_modified, date_added, use_function, set_function) VALUES (NULL, '<strong>Admin Flexible Returns Authorization (RMA) Version</strong>', 'RA_VERSION', '1.2', 'Flexible Returns Authorization (RMA) Version',  '".$ra_configuration_id."', 30, NULL, NOW(), NULL, NULL)";
+    $sql = "INSERT INTO ".DB_PREFIX."configuration (configuration_id, configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, last_modified, date_added, use_function, set_function) VALUES (NULL, '<strong>Admin Flexible Returns Authorization (RMA) Version</strong>', 'RA_VERSION', '1.6', 'Flexible Returns Authorization (RMA) Version',  '".$ra_configuration_id."', 30, NULL, NOW(), NULL, NULL)";
     $db->Execute($sql);
 		
    if(file_exists(DIR_FS_ADMIN . DIR_WS_INCLUDES . 'auto_loaders/config.ra.php'))
