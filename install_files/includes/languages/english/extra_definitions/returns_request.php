@@ -9,4 +9,8 @@
 
 // this is used to display the text link in the "information" or other sidebox
 define('BOX_INFORMATION_ORDER_STATUS', 'Order Status');
-// eof
+define('TEXT_ACCOUNT_INFO_RETURNS_BUTTON_HEADER', 'Submit a Returns Authorization Request');
+define('TEXT_ACCOUNT_INFO_RETURNS_TEXT_LINK_HEADER', 'Returns');
+define('TEXT_DEFINE_BUTTON_LINK2', 'Click here');
+define('TEXT_DEFINE_BUTTON_LINK3', ' to create an RMA.');
+define('TEXT_RETURN_GRACE_PERIOD_EXPIRED', 'The item(s) on this order extend past our <strong>' . RETURN_GRACE_PERIOD . ' Day</strong>' . '<a href="' . zen_href_link(FILENAME_SHIPPING, '', 'SSL') . '">' . ' Return Policy' . '</a>' . '. Please ' . '<a href="' . zen_href_link(FILENAME_CONTACT_US, '', 'SSL') . '">' . 'contact us' . '</a>' . ' for any further inquiries.');
