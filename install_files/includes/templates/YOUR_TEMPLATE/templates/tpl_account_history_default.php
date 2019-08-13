@@ -10,6 +10,7 @@
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * @version $Id: Author: DrByte  Sat Jan 9 13:13:41 2016 -0500 Modified in v1.5.5 $
+ * MODIFIED FOR Flexible Return Authorization for Zen Cart 1.5.6c
  */
 ?>
 <div class="centerColumn" id="accountHistoryDefault">
