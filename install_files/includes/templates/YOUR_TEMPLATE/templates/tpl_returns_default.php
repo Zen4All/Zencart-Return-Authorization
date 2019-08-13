@@ -3,7 +3,7 @@
  * Flexible Returns Authorization (RMA) Template
  *
  * @package templateSystem
- * @copyright Copyright 2003-2005 Zen Cart Development Team
+ * @copyright Copyright 2003-2019 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * @version $Id: tpl_returns_default.php 2.3.3 4/13/2010 Clyde Jones $
