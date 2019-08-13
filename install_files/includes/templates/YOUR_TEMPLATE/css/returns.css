@@ -1,0 +1,73 @@
+/* Flexible Returns Authorization (RMA) CSS*/
+
+fieldset ol{
+padding: .5em .5em 0 .5em;  
+list-style: none;/*removes the line numbers*/
+}
+
+fieldset ol li:hover {
+background:#F5F5F5;/*adds hover effect when mousover*/
+}
+
+fieldset li { 
+clear: left;  
+width: 100%;
+padding:.3em .1em .3em .1em; 
+}
+
+legend {
+background:#F5F5F5;
+border:1px solid #C0C0C0;
+padding: .5em;  
+}
+
+textarea {
+padding:0.5em;
+display: inline;
+width: 50%;
+border:1px solid #C0C0C0;
+overflow:auto;
+}
+
+div#returnAddressWrapper {
+border:1px solid #E9E9E9;
+background:#FFE573;text-align:center;
+} 
+
+div#returnSuccess {
+font-size:1.2em;
+padding:5px;
+color:#606060;
+} 
+
+div#returnAddressWrapper, div#returnRequired, div#returnPolicy, div#returnRMA, div#returnAddress, div#returnPhone {
+font-size:1.5em;
+font-weight:bold;
+padding:5px; 
+} 
+
+div#returnRequired, div#returnAddress {
+color:#FF0000;
+}
+
+div.alert {
+float:right;
+/*text-align:left;
+line-height:1.5em;*/
+/*width:28.5em;*//*reduce the width to keep right of text input*/
+font-weight:bold;
+}
+
+div#back.alert {
+float:left;
+}
+
+div#reason.alert {
+/*width:22.5em;*/ /*reduce the width to keep right of textarea input*/
+margin-top: -15.75em;
+}
+
+div.alert_stack {
+font-weight:bold;
+margin:-1.9em 0 0 3em;
+}

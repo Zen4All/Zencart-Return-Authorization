@@ -1,0 +1,94 @@
+INSTALLATION:
+
+Pre - Installation
+1.	Backup your Zen Cart installation and database. Best practice is to keep regular backups and perform a manual backup prior to the installation or modification of any portion of Zen Cart.
+	a.	You can use Secure FTP to backup the files. Two well known FTP programs are WinSCP and FileZilla.
+	b.	You can backup the MySQL database either using a tool such as PhpMyAdmin or from the Zen Cart admin interface using DrByte's Backup MYSQL Plugin
+2.	Unzip the package contents to a temporary directory on your computer.
+
+
+
+Installation
+
+1.	Rename the YOUR_TEMPLATE & YOUR_ADMIN directories to match the name of your store's template and admin folders.
+2.	Because some files are modified versions of core Zen Cart files they can impact your store and potentially other plugins. If you have installed any other plugins or made modifications to your Zen Cart installation which make changes to any of the files in the module package, you will need to use a tool like Winmerge or Beyond Compare to incorporate those changes into these files.
+3.	Log into the admin side of your Zen Cart installation using a web browser. Yes, log into your admin interface now before continuing. (Failing to first login can result in you missing vital installation and error messages.)
+4.	Upload all of the folders and files inside the "install_files" folder to the location of your Zen Cart installation. (The directory structure should match your store's directory structure. -- Do not upload the "install_files" folder to your store, just the files and folders inside the "install_files" folder.)
+5.	Click on ANY link in the admin interface (except edit orders). The "Admin Home" link is a good choice.
+6.	Note any error or success messages which appear on the top of the site.
+	a.	If all goes well it should report success.
+	b.	If additional steps need to be performed, follow the instructions. When done go back to Install Step 5 (previous step).
+
+------------------------------------------------------------------------------
+
+HELP ME - TIPS & TRICKS
+
+ADMIN:
+
+1.  I would start by creating a NEW order status so that the orders status gets updated upon success of issuing a RMA#.
+1A. GOTO Admin > Localization > Order Status
+1B. Insert something like "RMA# Generated" or "RMA# Issued"
+
+2.  Now I would Configure the RMA plugin
+2A. GOTO Admin > Configuration > Return Authorization
+
+3.  The first 14 confugurations allow you to set the FORM FIELDS as either 0 = Display as Optional, 1 = Display as Required, or 2 = Do not Display
+3A. Choose what info "YOU NEED" to complete a return.
+3B. Remember that the Order Number is auto generated and pretty much gives you all the info you need.
+
+4.  Enter the Action Requested Drop-down options.
+
+5.  This version v1.2 Removed the Phone# from showing on the success page. To add it back,
+5A. Set "Show Store Name, Address and Phone for Returns (ship to) on Returns Success Page" configuration to TRUE and
+5B. Add your Phone# to the "Show Different Returns (ship to) Address on Returns Success Page" configuration.
+
+6.  TIP: the "Admin Registered Customers Only?" configuration is mute in v1.2 due to the New COWOA Order Lookup feature.
+
+7.  If you set the "Admin Update Order Status option" configuration to TRUE then
+7A. You want to set the "Admin Order Status" configuration to a status that will alert you to the fact that a RMA# was 
+requested and issued, Perhaps the status you set in Admin > Localization > Order Status from section 1B of these tips 
+and tricks.
+
+8.  The "Admin Order Status for Delivered Items" configuration is VERY IMPORTANT, you want to set this to the status 
+that you use when the item(s) have left the building. (perhaps the status you set when providing the orders tracking#).
+
+9.  The "Admin Return Grace Period" configuration which should be numeric ONLY and should represent the same amount of 
+days that you stated in your Return Policy.
+9A. So if you have a 30 day return policy (enter "30").
+
+10. The "Email RMA Grace Period" configuration is used in the Return Authorization Request Confirmation Email sent to 
+your customer. This value should represent the amount of days before the RMA# issued expires. This way your customers know that you wont accept a return from 180 days ago using that RMA#, well unless thats your return policy.
+
+That should do it for the ADMIN side of things, lets take a look at the CATALOG side.
+
+CATALOG:
+
+LINKS:
+1. NOTE - Returns Form Page is no longer being accessed directly.
+1A. To add the Return Authorization Request Login or Order Lookup page link to other pages, footers, header, ezpages, ect.
+
+This should work:
+
+if($_SESSION['customer_id']) {
+  echo '<a href="' . zen_href_link(FILENAME_ACCOUNT_HISTORY, '', 'SSL') . '">' . BOX_INFORMATION_RETURNS . '</a>';
+} else {
+  echo '<a href="' . zen_href_link(FILENAME_RETURNS_REQUEST, '', 'SSL') . '">' . BOX_INFORMATION_RETURNS . '</a>';
+}
+
+RMA TEXT:
+2.  The Return Authorization Request (returns_request) page and if using the COWOA form to look up order info, the Return Authorization Request Order Information page, 
+the text, statements or comments can be found at includes\languages\english\YOUR_TEMPLATE\returns_request.php
+
+3.  If your customer chooses to login they are directed right to thier My Account > History page.
+3A. A RMA prompt is giving to logged in customers coming from the Return Authorization Request Login page and
+the text (prompt) can be found at includes\languages\english\YOUR_TEMPLATE\account_history.php
+
+4.  If you set the "Order History Info RMA Button/Link Display options" configuration to 1 = Display as Link, you can change the text using the "Order History Info RMA Link Display" configuration.
+4A. This text or button will change if the order extends past the value set in section ADMIN-1B of these tips and tricks and that 
+text can be found at includes\languages\english\YOUR_TEMPLATE\account_history_info.php
+
+5.  The Return Authorization Form page, Return Authorization Form Success page and the EMAIL Confirmation 
+text can be found at includes\languages\english\YOUR_TEMPLATE\returns.php
+
+We have spent alot of time on this plugin and hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+
