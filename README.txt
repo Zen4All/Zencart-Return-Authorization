@@ -1,7 +1,7 @@
 Contribution: Flexible Returns Authorization
 
 For Zen-Cart 1.5.6c
-Version: 1.5
+Version: 1.6
 Original Author: Clyde Jones
 Updated by: 
 Thomas McCaffery
