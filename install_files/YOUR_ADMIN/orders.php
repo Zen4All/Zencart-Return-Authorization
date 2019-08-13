@@ -5,6 +5,7 @@
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
  * @version $Id: DrByte 2019 May 26 Modified in v1.5.6b $
+ * MODIFIED FOR Flexible Return Authorization for Zen Cart 1.5.6c
  */
 require('includes/application_top.php');
 
