@@ -79,7 +79,7 @@ RMA TEXT:
 2.  The Return Authorization Request (returns_request) page and if using the COWOA form to look up order info, the Return Authorization Request Order Information page, 
 the text, statements or comments can be found at includes\languages\english\YOUR_TEMPLATE\returns_request.php
 
-3.  If your customer chooses to login they are directed right to thier My Account > History page.
+3.  If your customer chooses to login they are directed right to their My Account > History page.
 3A. A RMA prompt is giving to logged in customers coming from the Return Authorization Request Login page and
 the text (prompt) can be found at includes\languages\english\YOUR_TEMPLATE\account_history.php
 
@@ -90,5 +90,5 @@ text can be found at includes\languages\english\YOUR_TEMPLATE\account_history_in
 5.  The Return Authorization Form page, Return Authorization Form Success page and the EMAIL Confirmation 
 text can be found at includes\languages\english\YOUR_TEMPLATE\returns.php
 
-We have spent alot of time on this plugin and hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+We have spent a lot of time on this plugin and hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
 
