@@ -2,7 +2,7 @@
 /**
  * Flexible Returns Authorization (RMA) Install
  * For Zen-Cart 1.5.6
- * Last Updated: 08/12/2019
+ * Last Updated: 08/23/2019
  *
  * @copyright Copyright 2009-2019 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
