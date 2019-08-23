@@ -1,7 +1,7 @@
 Contribution: Flexible Returns Authorization
 
 For Zen-Cart 1.5.6c
-Version: 1.6
+Version: 1.6a
 Original Author: Clyde Jones
 Updated by: 
 Thomas McCaffery
@@ -13,6 +13,10 @@ License: under the GPL - See attached License for info.
 Support: Only given via the Zen Cart forums. (Please DO NOT email or PM contributors for "private" support)
 
 ------------------------------------------------------------------------------
+Fixes for V1.6a
+1. Corrected PHP Notice account-history-info (virtual) YOUR_TEMPLATE/tpl_account_history_info.php
+2. Removed double heading from checkout-success page YOUR_TEMPLATE/tpl_account_history_info.php
+
 New Features in v1.4
 1. Ensure order was actually placed by the customer who's posting an RMA.
 
@@ -91,8 +95,6 @@ includes\languages\english\YOUR_TEMPLATE\returns.php
 includes\languages\english\YOUR_TEMPLATE\returns_request.php
 includes\languages\english\extra_definitions\returns_request.php
 includes\languages\english\extra_definitions\YOUR_TEMPLATE\returns_defines.php
-includes\languages\english\html_includes\define_returns.php
-includes\languages\english\html_includes\YOUR_TEMPLATE\define_returns.php
 includes\modules\pages\popup_returns\header_php.php
 includes\modules\pages\popup_returns\jscript_main.php
 includes\modules\pages\returns\header_php.php
@@ -128,6 +130,10 @@ New Table columns are add to TABLE_ORDERS_STATUS_HISTORY
 ------------------------------------------------------------------------------
 
 VERSION HISTORY:
+
+Flexible RMA Version: 1.6a
+Date Added: 23 Aug 2019
+Author: Thomas McCaffery
 
 Flexible RMA Version: 1.2
 Date Added: 	27 Jul 2013
