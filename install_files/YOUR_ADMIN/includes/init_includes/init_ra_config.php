@@ -105,7 +105,7 @@
     $db->Execute($sql);
     $sql = "INSERT INTO ".DB_PREFIX."configuration (configuration_id, configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, last_modified, date_added, use_function, set_function) VALUES (NULL, '<strong>Email</strong> RMA Grace Period', 'RMA_GRACE_PERIOD', '15', 'This tells your customer how many days till the RMA# expires.', '".$ra_configuration_id."', 29, NULL, NOW(), NULL, 'zen_cfg_textarea(')";
     $db->Execute($sql);
-    $sql = "INSERT INTO ".DB_PREFIX."configuration (configuration_id, configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, last_modified, date_added, use_function, set_function) VALUES (NULL, '<strong>Admin Flexible Returns Authorization (RMA) Version</strong>', 'RA_VERSION', '1.6', 'Flexible Returns Authorization (RMA) Version',  '".$ra_configuration_id."', 30, NULL, NOW(), NULL, NULL)";
+    $sql = "INSERT INTO ".DB_PREFIX."configuration (configuration_id, configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, last_modified, date_added, use_function, set_function) VALUES (NULL, '<strong>Admin Flexible Returns Authorization (RMA) Version</strong>', 'RA_VERSION', '1.6a', 'Flexible Returns Authorization (RMA) Version',  '".$ra_configuration_id."', 30, NULL, NOW(), NULL, NULL)";
     $db->Execute($sql);
 		
    if(file_exists(DIR_FS_ADMIN . DIR_WS_INCLUDES . 'auto_loaders/config.ra.php'))
@@ -116,7 +116,7 @@
 	};
     }
 
-       $messageStack->add('Flexible Returns Authorization v1.0 install completed!','success');
+       $messageStack->add('Flexible Returns Authorization v1.6a install completed!','success');
 	 
 		 $sql = "ALTER TABLE " . TABLE_ORDERS_STATUS_HISTORY . " ADD rma_number VARCHAR( 255 ) NOT NULL DEFAULT ''"; 
 	  $db->Execute($sql);
