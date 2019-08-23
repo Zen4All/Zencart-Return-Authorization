@@ -95,6 +95,8 @@ includes\languages\english\YOUR_TEMPLATE\returns.php
 includes\languages\english\YOUR_TEMPLATE\returns_request.php
 includes\languages\english\extra_definitions\returns_request.php
 includes\languages\english\extra_definitions\YOUR_TEMPLATE\returns_defines.php
+includes\languages\english\html_includes\define_returns.php
+includes\languages\english\html_includes\YOUR_TEMPLATE\define_returns.php
 includes\modules\pages\popup_returns\header_php.php
 includes\modules\pages\popup_returns\jscript_main.php
 includes\modules\pages\returns\header_php.php
