@@ -7,7 +7,7 @@
  * @copyright Copyright 2009-2019 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
- * @version $Id: init_ra_config.php 3.2 08/12/2019 T McCaffery $
+ * @version $Id: init_ra_config.php 3.3 08/23/2019 T McCaffery $
  */
  
     $ra_menu_title = 'Return Authorization';
