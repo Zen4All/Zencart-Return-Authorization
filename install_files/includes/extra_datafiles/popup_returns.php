@@ -9,6 +9,4 @@
  * @version $Id: returns_defines.php 3.1 4/13/2010 Clyde Jones $
  */
 
-  define('FILENAME_POPUP_RETURNS', 'popup_returns');
-
-?>
+define('FILENAME_POPUP_RETURNS', 'popup_returns');

@@ -9,6 +9,5 @@
  * @version $Id: returns_defines.php 3.1 4/13/2010 Clyde Jones $
  */
 
-  define('FILENAME_RETURNS', 'returns');
-  define('FILENAME_DEFINE_RETURNS', 'define_returns');
-?>
+define('FILENAME_RETURNS', 'returns');
+define('FILENAME_DEFINE_RETURNS', 'define_returns');
