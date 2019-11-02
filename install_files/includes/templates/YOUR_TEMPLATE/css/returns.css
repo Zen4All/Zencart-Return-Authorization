@@ -1,32 +1,13 @@
 /* Flexible Returns Authorization (RMA) CSS*/
 
-fieldset ol{
-padding: .5em .5em 0 .5em;  
-list-style: none;/*removes the line numbers*/
+select {
+height: 40px;
+margin-left: 0 !important;
 }
-
-fieldset ol li:hover {
-background:#F5F5F5;/*adds hover effect when mousover*/
-}
-
-fieldset li { 
-clear: left;  
-width: 100%;
-padding:.3em .1em .3em .1em; 
-}
-
-legend {
-background:#F5F5F5;
-border:1px solid #C0C0C0;
-padding: .5em;  
-}
-
 textarea {
-padding:0.5em;
-display: inline;
-width: 50%;
-border:1px solid #C0C0C0;
-overflow:auto;
+margin: 0 0.1em 0 0;
+    width: 50%;
+
 }
 
 div#returnAddressWrapper {
@@ -56,10 +37,6 @@ float:right;
 line-height:1.5em;*/
 /*width:28.5em;*//*reduce the width to keep right of text input*/
 font-weight:bold;
-}
-
-div#back.alert {
-float:left;
 }
 
 div#reason.alert {
